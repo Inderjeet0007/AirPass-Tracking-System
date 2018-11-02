@@ -302,38 +302,6 @@
                 </p>
             </div>
             <!--// Copyright -->
-            <h2 class="main-title-w3layouts mb-2 text-center">All Beacons</h2>
-            <!--// main-heading -->
-<div class="padding-md">
-        <div style="margin-bottom: 1em;" class="pull-right text-right">
-
-            <a href="add_beacon.html" class="btn btn-success">Add New Beacon</a>
-
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="table-responsive panel-body">
-                        <table style="text-align: center"
-                               class="table table-striped table-bordered table-hover dataTables-example">
-                            <thead>
-                            <tr>
-
-                                <th style="text-align: center">Beacon name</th>
-                                <th style="text-align: center">Beacon MAC</th>
-                                <th style="text-align: center">Asset Type</th>
-                                <th style="text-align: center">Priority</th>
-                                <th style="text-align: center">Action</th>
-
-                            </tr>
-                            </thead>
-						</table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!-- Required common Js -->

@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-<?php session_start(); ?>
-=======
 
->>>>>>> 3561bd4693f934932641bc8cd9c46518cc2ca8d3
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -171,12 +168,7 @@
                                         <img src="images/profile.jpg" class="img-fluid mb-3" alt="Responsive image">
                                     </div>
                                     <div class="profile-r align-self-center">
-<<<<<<< HEAD
                                         <?php $user= $_SESSION['username']; echo '<h3 class="sub-title-w3-agileits">'.$user.'</h3>' ?>
-=======
-                                        <h3 class="sub-title-w3-agileits">Inderjeet Saluja</h3>
-                                        <a href="mailto:info@example.com">info@example.com</a>
->>>>>>> 3561bd4693f934932641bc8cd9c46518cc2ca8d3
                                     </div>
                                 </div>
                                 <a href="#" class="dropdown-item mt-3">

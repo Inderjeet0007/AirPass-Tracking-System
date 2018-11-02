@@ -1,42 +1,8 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>AirPass Tracking System</title>
-  <script>
-      addEventListener("load", function () {
-          setTimeout(hideURLbar, 0);
-      }, false);
-
-      function hideURLbar() {
-          window.scrollTo(0, 1);
-      }
-  </script>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-  <link rel="stylesheet" href="css/bar.css">
-  <link rel="stylesheet" type="text/css" href="css/pignose.calender.css" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-  <link rel="stylesheet" href="css/style4.css">
-  <link href="css/fontawesome-all.css" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <style media="screen">
-    .button3 {border-radius: 8px;
-      background-color: #008CBA;
-      color: white;
-      padding: 5px 20px;
-      text-align: center;}
-      .button2 {border-radius: 8px;
-        background-color: #f44336;
-        color: white;
-        padding: 5px 20px;
-        text-align: center;}
-  </style>
     <title>AirPass Tracking System</title>
-    <!-- Meta Tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
     <script>
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -46,30 +12,18 @@
             window.scrollTo(0, 1);
         }
     </script>
-    <!-- //Meta Tags -->
-
-    <!-- Style-sheets -->
-    <!-- Bootstrap Css -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- Bootstrap Css -->
-    <!-- Common Css -->
+    <link rel="stylesheet" href="css/bar.css">
+    <link rel="stylesheet" type="text/css" href="css/pignose.calender.css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!--// Common Css -->
-    <!-- Nav Css -->
     <link rel="stylesheet" href="css/style4.css">
-    <!--// Nav Css -->
-    <!-- Fontawesome Css -->
     <link href="css/fontawesome-all.css" rel="stylesheet">
-    <!--// Fontawesome Css -->
-    <!--// Style-sheets -->
-
-    <!--web-fonts-->
     <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <!--//web-fonts-->
 </head>
 
 <body>
+    <div class="se-pre-con"></div>
     <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
@@ -82,7 +36,6 @@
             <div class="profile-bg"></div>
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="index.php">
                     <a href="index.html">
                         <i class="fas fa-th-large"></i>
                         Dashboard
@@ -96,21 +49,20 @@
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="cards.php">Beacons</a>
+                            <a href="cards.html">Beacons</a>
                         </li>
                         <li>
-                            <a href="readers.php">Readers</a>
+                            <a href="carousels.html">Readers</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="charts.php">
+                    <a href="charts.html">
                         <i class="fas fa-braille"></i>
                         Heatmap
                     </a>
                 </li>
                 <li>
-                    <a href="grids.php">
                     <a href="grids.html">
                         <i class="fas fa-bell"></i>
                         Alerts
@@ -124,8 +76,7 @@
 
                 </li>
                 <li>
-
-                    <a href="mailbox.php">
+                    <a href="mailbox.html">
                         <i class="far fa-envelope"></i>
                         Mailbox
                         <span class="badge badge-secondary float-md-right bg-danger">5 New</span>
@@ -139,22 +90,18 @@
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu3">
                         <li>
-
-                            <a href="login.php">Profile</a>
-                        </li>
-                        <li>
-                            <a href="register.php">Register New Admin</a>
-                        </li>
-                        <li>
-                            <a href="forgot.php">Change password</a>
+                            <a href="login.html">Profile</a>
                         </li>
                         <li>
                             <a href="register.html">Register New Admin</a>
                         </li>
+                        <li>
+                            <a href="forgot.html">Change password</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="maps.php">
+                    <a href="maps.html">
                         <i class="far fa-map"></i>
                         Floor Plan
                     </a>
@@ -181,6 +128,48 @@
                     <!--// Search-from -->
                     <ul class="top-icons-agileits-w3layouts float-right">
                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="far fa-bell"></i>
+                                <span class="badge">1</span>
+                            </a>
+                            <div class="dropdown-menu top-grid-scroll drop-1">
+                                <h3 class="sub-title-w3-agileits">Notifications</h3>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <div class="notif-img-agileinfo">
+                                        <img src="images/clone.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="notif-content-wthree">
+                                        <p class="paragraph-agileits-w3layouts py-2">
+                                            <span class="text-diff">Inderjeet</span> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                        <h6>4 mins ago</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <div class="notif-img-agileinfo">
+                                        <img src="images/clone.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="notif-content-wthree">
+                                        <p class="paragraph-agileits-w3layouts py-2">
+                                            <span class="text-diff">Radhika</span> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                        <h6>6 mins ago</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <div class="notif-img-agileinfo">
+                                        <img src="images/clone.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="notif-content-wthree">
+                                        <p class="paragraph-agileits-w3layouts py-2">
+                                            <span class="text-diff">Nidhi</span> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                        <h6>12 mins ago</h6>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">view all notifications</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
                                 <i class="far fa-user"></i>
@@ -191,7 +180,8 @@
                                         <img src="images/profile.jpg" class="img-fluid mb-3" alt="Responsive image">
                                     </div>
                                     <div class="profile-r align-self-center">
-                                        <?php $user= $_SESSION['username']; echo '<h3 class="sub-title-w3-agileits">'.$user.'</h3>' ?>
+                                        <h3 class="sub-title-w3-agileits">Inderjeet Saluja</h3>
+                                        <a href="mailto:info@example.com">info@example.com</a>
                                     </div>
                                 </div>
                                 <a href="#" class="dropdown-item mt-3">
@@ -200,11 +190,6 @@
                                 </a>
                                 <a href="#" class="dropdown-item mt-3">
                                     <h4>
-                                        <i class="far fa-thumbs-up mr-3"></i>Support</h4>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <?php session_destroy(); ?>
-                                <a class="dropdown-item" href="login.php">Logout</a>
                                         <i class="fas fa-link mr-3"></i>Activity</h4>
                                 </a>
                                 <a href="#" class="dropdown-item mt-3">
@@ -227,111 +212,53 @@
                 </div>
             </nav>
             <!--// top-bar -->
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Stats -->
+                    <div class="outer-w3-agile col-xl">
+                        <div class="stat-grid p-3 d-flex align-items-center justify-content-between bg-primary">
+                            <div class="s-l">
+                                <h5>No of Beacons Alloted</h5>
 
-            <!-- main-heading -->
-            <h2 class="main-title-w3layouts mb-2 text-center">Readers</h2>
-            <!--// main-heading -->
-
-            <div class="padding-md">
-                    <div style="margin-bottom: 1em;" class="pull-right text-right">
-
-                        <a href="add_reader.php" class="btn btn-success">Add New Reader</a>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="table-responsive panel-body">
-                                    <table style="text-align: center"
-                                           class="table table-striped table-bordered table-hover dataTables-example">
-                                        <thead>
-
-
-            	  <tr>
-
-                                            <th style='text-align: center'>Reader name</th>
-                                            <th style='text-align: center'>Reader MAC</th>
-                                            <th style='text-align: center'>Action</th>
-
-                   </tr>
-
-                                        <?php
-            //Database credentials
-            $link = mysqli_connect("localhost", "root", "", "air pass");
-
-            // Check connection
-            if($link === false){
-                die("ERROR: Could not connect. " . mysqli_connect_error());
-            }
-
-
-            $sql="select reader_id,r_name,mac_add from reader ";
-            $res= mysqli_query($link,$sql);
-
-               while($row = mysqli_fetch_array($res)){
-                  $id = $row['reader_id'];
-                 echo "<tr>";
-                 echo "<td>" . $row['r_name'] . "</td>";
-                 echo "<td>" . $row['mac_add'] . "</td>";
-                 $emessage= 'Are you sure you want to edit ?';
-                 $dmessage= 'Are you sure you want to proceed ?';
-               echo "<td><button class='button3'><a onclick= 'return confirm(\"$emessage\")' href='records_r.php?id=" . $id . "'>Edit</a></button>
-            	<button class='button2'><a onclick= 'return confirm(\"$dmessage\")' href='delete_r.php?id=" . $id . "'>Delete</a></button></td>";
-
-
-                 echo "</tr>"."<br>";
-
-
-               }     echo"</table>"."<br>";
-
-
-            ?>
-
-                                </div>
+                            </div>
+                            <div class="s-r">
+                                <h6>500
+                                    <i class="far fa-edit"></i>
+                                </h6>
                             </div>
                         </div>
+                        <div class="stat-grid p-3 mt-3 d-flex align-items-center justify-content-between bg-success">
+                            <div class="s-l">
+                                <h5>No of Readers Installed</h5>
+
+                            </div>
+                            <div class="s-r">
+                                <h6>250
+                                    <i class="far fa-smile"></i>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="">
+                          <img src="images/Floormap.png" alt="">
+                        </div>
                     </div>
+                    <!--// Stats -->
+
                 </div>
+            </div>
 
+            <!--// three-grids -->
+            <div class="container-fluid">
+                <div class="row">
 
-
+                </div>
+            </div>
             <!-- Copyright -->
             <div class="copyright-w3layouts py-xl-3 py-2 mt-xl-5 mt-4 text-center">
-                <p>© 2018 APTS . All Rights Reserved</a>
+                <p>© 2018 APTS . All Rights Reserved
                 </p>
             </div>
             <!--// Copyright -->
-            <h2 class="main-title-w3layouts mb-2 text-center">All Beacons</h2>
-            <!--// main-heading -->
-<div class="padding-md">
-        <div style="margin-bottom: 1em;" class="pull-right text-right">
-
-            <a href="add_beacon.html" class="btn btn-success">Add New Beacon</a>
-
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="table-responsive panel-body">
-                        <table style="text-align: center"
-                               class="table table-striped table-bordered table-hover dataTables-example">
-                            <thead>
-                            <tr>
-
-                                <th style="text-align: center">Beacon name</th>
-                                <th style="text-align: center">Beacon MAC</th>
-                                <th style="text-align: center">Asset Type</th>
-                                <th style="text-align: center">Priority</th>
-                                <th style="text-align: center">Action</th>
-
-                            </tr>
-                            </thead>
-						</table>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -339,6 +266,18 @@
     <!-- Required common Js -->
     <script src='js/jquery-2.2.3.min.js'></script>
     <!-- //Required common Js -->
+
+    <!-- loading-gif Js -->
+    <script src="js/modernizr.js"></script>
+    <script>
+        //paste this code under head tag or in a seperate js file.
+        // Wait for window load
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+    <!--// loading-gif Js -->
 
     <!-- Sidebar-nav Js -->
     <script>
@@ -350,7 +289,44 @@
     </script>
     <!--// Sidebar-nav Js -->
 
-    <!-- dropdown nav -->
+    <!-- Bar-chart -->
+    <script src="js/rumcaJS.js"></script>
+    <script src="js/example.js"></script>
+    <!--// Bar-chart -->
+    <!-- Calender -->
+    <script src="js/moment.min.js"></script>
+    <script src="js/pignose.calender.js"></script>
+    <script>
+        //<![CDATA[
+        $(function () {
+            $('.calender').pignoseCalender({
+                select: function (date, obj) {
+                    obj.calender.parent().next().show().text('You selected ' +
+                        (date[0] === null ? 'null' : date[0].format('YYYY-MM-DD')) +
+                        '.');
+                }
+            });
+
+            $('.multi-select-calender').pignoseCalender({
+                multiple: true,
+                select: function (date, obj) {
+                    obj.calender.parent().next().show().text('You selected ' +
+                        (date[0] === null ? 'null' : date[0].format('YYYY-MM-DD')) +
+                        '~' +
+                        (date[1] === null ? 'null' : date[1].format('YYYY-MM-DD')) +
+                        '.');
+                }
+            });
+        });
+        //]]>
+    </script>
+    <!--// Calender -->
+
+    <!-- profile-widget-dropdown js-->
+    <script src="js/script.js"></script>
+    <!--// profile-widget-dropdown js-->
+
+        <!-- dropdown nav -->
     <script>
         $(document).ready(function () {
             $(".dropdown").hover(

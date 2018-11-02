@@ -4,7 +4,6 @@ include 'dbconnect.php';
 
 
 $id = intval($_GET['id']);
-echo "<br>BEACON ID: ".$id."<br><br>";
 if($id > 0) {
   $res = mysqli_query($db, "SELECT * FROM beacon WHERE beacon_id = $id");
   $row= mysqli_fetch_array($res);
@@ -24,21 +23,7 @@ if(isset($_POST['update']))
         if(empty($mac_add)) {
             echo "<font color='red'>Mac Address field is empty.</font><br/>";
         }
-<<<<<<< HEAD
 
-
-    } else {
-        //updating the table
-        $sql= "UPDATE beacon "."SET b_name= '$b_name', mac_add= '$mac_add' ". "WHERE beacon_id=$id";
-
-        $result = mysqli_query($db, $sql);
-        if($result){
-              header("Location: cards.php");
-        } else{
-            echo "ERROR: Could not able to execute $sql. " . mysqli_error($db);
-        }
-
-=======
 
 
     } else {
@@ -52,7 +37,6 @@ if(isset($_POST['update']))
             echo "ERROR: Could not able to execute $sql. " . mysqli_error($db);
         }
 
->>>>>>> 3561bd4693f934932641bc8cd9c46518cc2ca8d3
         // Close connection
         mysqli_close($db);
 
@@ -68,7 +52,6 @@ if(isset($_POST['update']))
       addEventListener("load", function () {
           setTimeout(hideURLbar, 0);
       }, false);
-<<<<<<< HEAD
 
       function hideURLbar() {
           window.scrollTo(0, 1);
@@ -238,31 +221,5 @@ if(isset($_POST['update']))
     </div>
   </div>
 </div>
-
-=======
-
-      function hideURLbar() {
-          window.scrollTo(0, 1);
-      }
-  </script>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-  <link rel="stylesheet" href="css/bar.css">
-  <link rel="stylesheet" type="text/css" href="css/pignose.calender.css" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-  <link rel="stylesheet" href="css/style4.css">
-  <link href="css/fontawesome-all.css" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-</head>
-  <body>
-    
-    <form  method="post" action="<?php $_PHP_SELF ?>">
-      <label>BEACON NAME</label><br/>
-      <input type="text" name="b_name" value='<?php echo $row['b_name'];?>'><br/>
-      <label>MAC ADDRESS</label><br/>
-      <input type="text" name="mac_add" value='<?php echo $row['mac_add'];?>'><br/>
-      <input type="submit" class="btn btn-success" name="update" value="Update" >
-    </form>
->>>>>>> 3561bd4693f934932641bc8cd9c46518cc2ca8d3
   </body>
 </html>

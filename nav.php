@@ -1,10 +1,8 @@
-<<<<<<< HEAD
+
 <?php session_start();
 include 'dbconnect.php'
  ?>
-=======
 
->>>>>>> 3561bd4693f934932641bc8cd9c46518cc2ca8d3
 <html lang="en" dir="ltr">
   <head>
     <title>AirPass Tracking System</title>
@@ -56,11 +54,10 @@ include 'dbconnect.php'
                               <a href="cards.php">Beacons</a>
                           </li>
                           <li>
-<<<<<<< HEAD
+
                               <a href="readers.php">Readers</a>
-=======
-                              <a href="carousels.php">Readers</a>
->>>>>>> 3561bd4693f934932641bc8cd9c46518cc2ca8d3
+
+
                           </li>
                       </ul>
                   </li>
@@ -147,14 +144,9 @@ include 'dbconnect.php'
                                           <img src="images/profile.jpg" class="img-fluid mb-3" alt="Responsive image">
                                       </div>
                                       <div class="profile-r align-self-center">
-<<<<<<< HEAD
 
                                           <?php $user= $_SESSION['username']; echo '<h3 class="sub-title-w3-agileits">'.$user.'</h3>' ?>
 
-=======
-                                          <h3 class="sub-title-w3-agileits">Inderjeet Saluja</h3>
-                                          <a href="mailto:info@example.com">info@example.com</a>
->>>>>>> 3561bd4693f934932641bc8cd9c46518cc2ca8d3
                                       </div>
                                   </div>
                                   <a href="#" class="dropdown-item mt-3">
@@ -166,19 +158,17 @@ include 'dbconnect.php'
                                           <i class="far fa-thumbs-up mr-3"></i>Support</h4>
                                   </a>
                                   <div class="dropdown-divider"></div>
-<<<<<<< HEAD
+
                                    <?php session_destroy(); ?>
                                    <a class="dropdown-item" href="login.php">Logout</a>
 
-=======
-                                  <a class="dropdown-item" href="login.html">Logout</a>
->>>>>>> 3561bd4693f934932641bc8cd9c46518cc2ca8d3
+
                               </div>
                           </li>
                       </ul>
                   </div>
               </nav>
-<<<<<<< HEAD
+
   </body>
 
 </html>
@@ -188,9 +178,8 @@ include 'dbconnect.php'
   mysqli_close($db);
 
   ?>
-=======
+
 
   </body>
 
 </html>
->>>>>>> 3561bd4693f934932641bc8cd9c46518cc2ca8d3

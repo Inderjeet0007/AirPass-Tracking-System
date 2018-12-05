@@ -1,0 +1,76 @@
+ {% extends 'base.html' %}
+
+{% block title %} Beacons | AirPass Tracking System {% endblock %}
+<head>
+
+  <style media="screen">
+    .button3 {border-radius: 8px;
+      background-color: #008CBA;
+      color: white;
+      padding: 5px 20px;
+      text-align: center;}
+      .button2 {border-radius: 8px;
+        background-color: #f44336;
+        color: white;
+        padding: 5px 20px;
+        text-align: center;}
+  </style>
+</head>
+{% block content %}
+
+    <!-- main-heading -->
+            <h2 class="main-title-w3layouts mb-2 text-center">Beacons</h2>
+            <!--// main-heading -->
+
+            <div class="padding-md">
+              <ol class="breadcrumb">
+
+                <li><a href="/apts_main/">Dashboard</a> </li>
+                <li> <strong><span></span></strong><a href="{{ BASE_URL }}"><strong>Beacon Dashboard</strong></a></li>
+              </ol>
+                    <div style="margin-bottom: 1em;" class=" text-center">
+
+                        <a href="{{ BASE_URL }}/apts_main/beacon/add_new_beacon" class="btn btn-success">Add New Beacon</a>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-default">
+                                    <div class="table-responsive panel-body">
+                                        <table style="text-align: center"
+                                               class="table table-striped table-bordered table-hover dataTables-example">
+                                            <thead>
+
+
+                    <tr>
+                                                <th>Sr. No.</th>
+                                                <th style='text-align: center'>Beacon name</th>
+                                                <th style='text-align: center'>Beacon MAC</th>
+                                                <th style='text-align: center'>Action</th>
+
+                    </tr>
+                                            </thead>
+                         {% for object in object %}
+                         <tr>
+                            <td>{{forloop.counter0}}</td>
+                             <td>{{ object.b_name }}</td>
+                         <td>{{ object.mac_add }}</td>
+                         <td><button class='button3 navbar-btn btn-info'><i class="glyphicon glyphicon-pencil"></i>&nbsp;<a href='/apts_main/beacon/edit_beacon/{{ object.id }}'>Edit</a></button>&nbsp;
+                         <button class='button2 navbar-btn btn-info'><i class="glyphicon glyphicon-remove"></i>&nbsp;<a href='/apts_main/beacon/confirm_beacon/{{ object.id }}'>Delete</a></button></td>
+                         </tr>
+                         {% endfor %}      </table>
+                    </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+
+                </div>
+            </div>
+                    </div>
+            </div>
+
+{% endblock %}

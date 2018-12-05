@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %} Add New Beacon | AirPass Tracking System {% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+{% block content %}
+
+    <!-- main-heading -->
+            <h3 class="main-title-w3layouts mb-2 text-left">Addition of New Beacon</h3>
+            <!--// main-heading -->
+
+            <div class="padding-md">
+              <ol class="breadcrumb">
+
+                <li><a href="/apts_main/">Dashboard</a> </li>
+                <li><span></span><a href="/apts_main/beacon">Beacon Dashboard</a></li>
+                <li> <strong><span></span></strong><a href="{{ BASE_URL }}"><strong>Add New Beacon</strong></a></li>
+              </ol>
+                    <div class="wrapper wrapper-content animated fadeIn">
+
+      <div class="padding-md text-center">
+          <div class="row ">
+
+              <div class="">
+                  <form id="tracker_form" class="no-margin wizard-big wizard clearfix" method="post"
+                        action="{% url 'store_new_beacon' %}" novalidate="novalidate">
+                                {% csrf_token %}
+
+                              <div style="width:100%;">
+                                  <div class="col-md-12">
+                                          <div >
+                                            <p class="text-center"><strong>Enter the following details about the new beacon:<br><br></strong></p>
+                                          </div>
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+                                                  <label class="control-label">Beacon Name</label>
+                                                  <input type="text" placeholder="Name of the Beacon..."  class="form-control text-center input-sm"
+                                                         name="b_name"
+                                                         required="">
+                                              </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+                                                  <label class="control-label">Beacon MAC</label>
+                                                  <input type="text" placeholder="MAC Address..."  class="form-control text-center input-sm"
+                                                         name="mac_add"
+                                                         required>
+                                              </div><!-- /form-group -->
+                                          </div><!-- /.col -->
+
+                                          <div class="col-md-1 text-center">
+                                              <div class="form-group" style="margin-top: 20%">
+                                                  <input type="submit" class="btn btn-warning" name="add_b" value="Submit" onclick="">
+                                              </div>
+                                          </div>
+
+                                  </div>
+
+                              </div>
+                  </form>
+              <!-- /panel -->
+      </div>
+                      </div>
+
+              </div>
+          </div>
+            </div>
+
+{% endblock %}
+</body>
+</html>

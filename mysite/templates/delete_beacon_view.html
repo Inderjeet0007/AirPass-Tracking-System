@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %} Delete Beacon | AirPass Tracking System {% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+{% block content %}
+
+    <!-- main-heading -->
+            <h3 class="main-title-w3layouts mb-2 text-left">Delete Beacon</h3>
+            <!--// main-heading -->
+
+            <div class="padding-md">
+              <ol class="breadcrumb">
+
+                <li><a href="/apts_main/">Dashboard</a> </li>
+                <li><span></span><a href="/apts_main/beacon">Beacon Dashboard</a></li>
+                <li> <strong><span></span></strong><a href="{{ BASE_URL }}"><strong>Delete Beacon</strong></a></li>
+              </ol>
+                    <div class="wrapper wrapper-content animated fadeIn">
+
+      <div class=" text-center">
+          <div class="col-xl-12">
+
+              <div class="">
+                  <form id="tracker_form" class="no-margin wizard-big wizard clearfix" method="post"
+                        action="{% url 'delete_beacon' id=object %}">
+                                {% csrf_token %}
+                                <h1>Delete Beacon with Id {{ object }}?</h1><br>
+
+                              <div style="width:100%;" class="text-center">
+                                  <div class="col-md-12 ">
+                                      <p>Are you sure you want to delete this beacon?</p><br>
+                                      <P class="text-danger -bold">Warning : This action can't be undone !</P><br>
+                                      <input type="submit" class="btn btn-warning" value="Yes"/>
+                                      <a class="btn btn-success" href="/apts_main/beacon">Cancel</a>
+                                  </div>
+                              </div>
+                  </form>
+              <!-- /panel -->
+      </div>
+                      </div>
+
+              </div>
+          </div>
+            </div>
+
+{% endblock %}
+</body>
+</html>

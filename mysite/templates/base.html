@@ -1,0 +1,180 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %} {% endblock %}</title>
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="{% static '/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="icon" href="{% static '/favicon.ico' %}"/>
+    <link rel="stylesheet" href="{% static 'css/bar.css' %}">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="{% static 'css/style4.css' %}">
+    <link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="wrapper">
+          <!-- Sidebar Holder -->
+          <nav id="sidebar">
+              <div class="sidebar-header">
+                  <h1>
+                      <a href="/apts_main/">AirPass</a>
+                  </h1>
+                  <span>APTS</span>
+              </div>
+              <div class="profile-bg"></div>
+              <ul class="list components">
+                  <li>
+                      <a href="/apts_main/">
+                          <i class="glyphicon glyphicon-dashboard"></i>
+                          Dashboard
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                          <i class="	glyphicon glyphicon-tasks"></i>
+                          Components
+                          <i class="glyphicon glyphicon-menu-down"></i>
+                      </a>
+                      <ul class="collapse list" id="homeSubmenu">
+                          <li>
+
+                              <a href="/apts_main/beacon"><i class="	glyphicon glyphicon-record"></i>Beacons </a>
+                          </li>
+                          <li>
+
+                              <a href="/apts_main/reader"><i class="glyphicon glyphicon-modal-window"></i> Readers</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="glyphicon glyphicon-equalizer"></i>
+                          Heatmap
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="	glyphicon glyphicon-alert"></i>
+                          Alerts
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" >
+                          <i class="glyphicon glyphicon-file"></i>
+                          Reports
+                      </a>
+
+                  </li>
+                  <li>
+                      <a href="http://127.0.0.1:8000/admin">
+                          <i class="glyphicon glyphicon-user"></i>
+                          Django Admin Panel
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="glyphicon glyphicon-object-align-vertical"></i>
+                          Floor Plan
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/apts_main/contact">
+                          <i class="glyphicon glyphicon-phone"></i>
+                          Contact Us
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+
+          <!-- Page Content Holder -->
+          <div id="content">
+                 <div id="content">
+              <!-- top-bar -->
+              <nav class="navbar navbar-default mb-xl-5 mb-4">
+                  <div class="container-fluid">
+
+                      <div class="navbar-header">
+                          <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn glyphicon glyphicon-align-justify">
+
+                          </button>
+                      </div>
+                      <!-- Search-from -->
+                      <form action="#" method="post" class="form-inline mx-auto search-form">
+                          <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" required="">
+                          <button class="btn btn-style my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                      <!--// Search-from -->
+                      <form method="post" action="/logout/">
+                          {% csrf_token %}
+                            <ul class="top-icons-agileits-w3layouts float-right">
+
+                          <li class="nav-item dropdown">
+                              <p><i>Welcome,  {{ user.username }}</i>&nbsp;&nbsp;
+                                       <input class="btn btn-info my-2 my-sm-0" type="submit" value="LOGOUT"></p>
+
+                          </li>
+                        </ul>
+                      </form>
+
+                  </div>
+              </nav>
+                {% block content %} {% endblock %}
+              <!-- Required common Js -->
+                  <script src='{% static 'js/jquery-2.2.3.min.js' %}'></script>
+                  <!-- //Required common Js -->
+
+                  <!-- Sidebar-nav Js -->
+                  <script>
+                      $(document).ready(function () {
+                          $('#sidebarCollapse').on('click', function () {
+                              $('#sidebar').toggleClass('active');
+                          });
+                      });
+                  </script>
+                  <!--// Sidebar-nav Js -->
+
+                  <!-- dropdown nav -->
+                  <script>
+                      $(document).ready(function () {
+                          $(".dropdown").hover(
+                              function () {
+                                  $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                                  $(this).toggleClass('open');
+                              },
+                              function () {
+                                  $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                                  $(this).toggleClass('open');
+                              }
+                          );
+                      });
+                  </script>
+                  <!-- //dropdown nav -->
+
+                  <!-- Js for bootstrap working-->
+                  <script src="{% static '/js/bootstrap.min.js' %}"></script>
+                  <!-- //Js for bootstrap working -->
+          </div>
+
+ <!-- Copyright -->
+            <div class="copyright-w3layouts py-xl-3 py-2 text-center">
+                <p>© 2019 AirPass Tracking System<br>All Rights Reserved
+                </p>
+            </div>
+            <!--// Copyright -->
+</body>
+</html>

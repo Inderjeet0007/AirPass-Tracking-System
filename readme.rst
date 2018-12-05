@@ -22,11 +22,13 @@ Tech Stack:
 
 1> Django 
 
-2> Python
+2> RestFULL API
 
-3> Java
+3> Python
 
-4> HTML 5 / CSS 3
+4> Java
 
-5> POSTMAN
+5> HTML 5 / CSS 3
+
+6> POSTMAN
 

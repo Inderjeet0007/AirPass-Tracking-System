@@ -16,3 +16,17 @@ Assessed by leading auditors.
 
 Real time granular post flight analysis and detailed pre-flight calculation in one system.
 
+###################
+Tech Stack:
+###################
+
+1> Django 
+
+2> Python
+
+3> Java
+
+4> HTML 5 / CSS 3
+
+5> POSTMAN
+

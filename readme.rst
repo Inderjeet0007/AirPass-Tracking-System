@@ -32,3 +32,24 @@ Tech Stack:
 
 6> POSTMAN
 
+7> MySQL Database
+
+###################
+Software Used:
+###################
+
+1> Pycharm
+
+2> Python 3.6
+
+3> XAMPP / VAMPP (MySQL, Apache)
+
+4> Postman
+
+###################
+Hardware Used:
+###################
+
+1> Beacons
+
+2> Readers

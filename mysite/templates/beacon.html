@@ -54,8 +54,8 @@
                             <td>{{forloop.counter0}}</td>
                              <td>{{ object.b_name }}</td>
                          <td>{{ object.mac_add }}</td>
-                         <td><button class='button3 navbar-btn btn-info'><i class="glyphicon glyphicon-pencil"></i>&nbsp;<a href='/apts_main/beacon/edit_beacon/{{ object.id }}'>Edit</a></button>&nbsp;
-                         <button class='button2 navbar-btn btn-info'><i class="glyphicon glyphicon-remove"></i>&nbsp;<a href='/apts_main/beacon/confirm_beacon/{{ object.id }}'>Delete</a></button></td>
+                         <td><button class='btn-sm  btn-warning'><i class="glyphicon glyphicon-pencil"></i>&nbsp;<a href='/apts_main/beacon/edit_beacon/{{ object.id }}'>Edit</a></button>&nbsp;
+                         <button class='btn-sm btn-danger'><i class="glyphicon glyphicon-remove"></i>&nbsp;<a href='/apts_main/beacon/confirm_beacon/{{ object.id }}'>Delete</a></button></td>
                          </tr>
                          {% endfor %}      </table>
                     </div>

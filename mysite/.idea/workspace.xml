@@ -89,7 +89,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="beacons_views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="beacons_views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Airpass/app_views/beacons_views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
@@ -116,20 +116,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <file leaf-file-name="beacon.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/beacon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+            <state relative-caret-position="329">
+              <caret line="56" column="63" lean-forward="true" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="beacon.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/beacon.html">
+      <file leaf-file-name="reader.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/reader.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="56" column="159" selection-start-line="56" selection-start-column="159" selection-end-line="56" selection-end-column="159" />
+            <state relative-caret-position="323">
+              <caret line="58" column="58" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -172,7 +172,6 @@
         <option value="$PROJECT_DIR$/Airpass/models.py" />
         <option value="$PROJECT_DIR$/templates/add_new_r.html" />
         <option value="$PROJECT_DIR$/templates/add_new_b.html" />
-        <option value="$PROJECT_DIR$/templates/reader.html" />
         <option value="$PROJECT_DIR$/Airpass/app_urls/dashboard_url.py" />
         <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/urls.py" />
@@ -184,9 +183,10 @@
         <option value="$PROJECT_DIR$/templates/update_reader.html" />
         <option value="$PROJECT_DIR$/Airpass/app_urls/beacons_url.py" />
         <option value="$PROJECT_DIR$/templates/update_beacon.html" />
-        <option value="$PROJECT_DIR$/templates/beacon.html" />
         <option value="$PROJECT_DIR$/Airpass/app_views/beacons_views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/beacon.html" />
+        <option value="$PROJECT_DIR$/templates/reader.html" />
       </list>
     </option>
   </component>
@@ -310,7 +310,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -619,13 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/reader.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/update_reader.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -635,26 +628,6 @@
             <element signature="e#1577#1583#0#HTML" expanded="true" />
             <element signature="e#1559#1565#0#HTML" expanded="true" />
             <element signature="e#1565#1571#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/beacon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="56" column="159" selection-start-line="56" selection-start-column="159" selection-end-line="56" selection-end-column="159" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/update_beacon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-          <folding>
-            <element signature="e#1431#1437#0#HTML" expanded="true" />
-            <element signature="e#1636#1642#0#HTML" expanded="true" />
-            <element signature="e#1642#1648#0#HTML" expanded="true" />
-            <element signature="e#1648#1654#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -689,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Airpass/app_views/beacons_views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -703,6 +669,40 @@
           <folding>
             <element signature="e#1#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/update_beacon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding>
+            <element signature="e#1431#1437#0#HTML" expanded="true" />
+            <element signature="e#1636#1642#0#HTML" expanded="true" />
+            <element signature="e#1642#1648#0#HTML" expanded="true" />
+            <element signature="e#1648#1654#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/beacon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="56" column="63" lean-forward="true" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/reader.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="58" column="58" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="58" />
         </state>
       </provider>
     </entry>
